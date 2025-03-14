@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather For Spartans - Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Weather For Spartans</div>
+        <nav>
+            <a href="weather.html" class="active1">Main page</a>
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="forecast.html">Forecast</a>
+            <a href="maps.html">Maps</a>
+            <a href="about.html">About</a>
+        </nav>
+        <div class="location">Bamenda, Northwest Region, Cameroon</div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to your Weather Dashboard, Spartan!</h1>
+                <div class="current-temp">28°C</div>
+                <div class="summary">
+                    Mostly Cloudy | Feels Like 25°C | Humidity 65%
+                </div>
+            </div>
+        </section>
+
+        <section class="current-conditions">
+            <div class="condition-grid">
+                <div class="condition-item">
+                    <span class="label">Humidity</span>
+                    <span class="value">65%</span>
+                </div>
+                <div class="condition-item">
+                    <span class="label">Feels Like</span>
+                    <span class="value">25°C</span>
+                </div>
+                <div class="condition-item">
+                    <span class="label">Wind</span>
+                    <span class="value">12 mph NW</span>
+                </div>
+                <div class="condition-item">
+                    <span class="label">UV Index</span>
+                    <span class="value">3 (Moderate)</span>
+                </div>
+                </div>
+        </section>
+
+        <section class="hourly-forecast">
+            <h2>Hourly Forecast</h2>
+            <div class="hourly-scroll">
+                <div class="hourly-item">
+                    <span class="time">Now</span>
+                    <span class="temp">28°C</span>
+                </div>
+                <div class="hourly-item">
+                    <span class="time">10:00</span>
+                    <span class="temp">27°C</span>
+                </div>
+                </div>
+        </section>
+
+        <section class="daily-forecast">
+            <h2>7-Day Forecast</h2>
+            <div class="daily-grid">
+                <div class="daily-card">
+                    <h3>Tomorrow</h3>
+                    <div class="high-low">
+                        <span>High: 30°C</span>
+                        <span>Low: 20°C</span>
+                    </div>
+                    <p>Sunny with clear skies.</p>
+                </div>
+                </div>
+        </section>
+
+        <section class="map">
+            <h2>Weather Map</h2>
+            <div id="map">
+                </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Weather For Spartans</p>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
+
+</html>
