@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-container">
+    <form id="loginForm">
+      <h2>Spartan Login</h2>
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter your username" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+      </div>
+      <button type="submit">Login</button>
+      <p id="error-message" class="error-message"></p>
+      
+      <button type="submit"><a style="text-decoration: none; color: white;" href="registration.html">Create Account</a></button>
+      <h3>Forgot Password</h3>
+    </form>
+  </div>
+  
+  <script src="login.js"></script>
+</body>
+</html>

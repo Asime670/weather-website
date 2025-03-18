@@ -1,0 +1,108 @@
+body{
+    background-image: url('sun.jpeg');
+    background-repeat: no-repeat;
+    /* width: 200px; */
+    background-size: cover;
+    /* text-align: center;
+    justify-content: cente;
+    align-items: center; */
+}
+.weather-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin: auto;
+    background: transparent;
+    
+}
+h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.weather-info h2{
+    font-size: 32px;
+    margin-right: 1000px ;
+}
+.weather-info h1{
+    font-size: 50px;
+    margin: right 400px; ;
+}
+.feels.like{
+    font-size: 18px; 
+}
+
+.hourly-forecast{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    justify-content: center;
+    margin-top: 400px;
+    margin-right: 200px;
+    color:  white;
+}
+
+.return{
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+}
+@media (max-width: 678px) {
+    body{
+        /* display: flex; */
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        width: 300px;
+    }
+    .weather-info{
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    color: black;
+    
+    }
+    .weather-info h1{
+        font-size: 1.8rem;
+    }
+    .toda{
+        text-align: center;
+        align-items: center;
+    }
+
+    .weather-container{
+        display: grid;   
+    }
+    .weather-info h2{
+        font-size: 15px;
+        display: flex;
+        
+    }
+    .return{
+        position: fixed;
+        bottom: 400px;
+        left: 30px;
+        width: 100px;
+        margin-top: 170px;
+    }
+    .hourly-forecast{
+        max-width: 200px;
+    }  
+    .mov{
+        margin-left: -900px;
+        /* float: left; */
+    } 
+}
+
+a{
+    background: rgb(255, 128, 0);
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+}

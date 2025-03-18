@@ -1,0 +1,331 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: serif;
+  background-color: rgb(245, 241, 241);
+  background-color: #121826;
+  
+}
+.navbar{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 10px rgba(190, 188, 188, 0.959);
+  background-color: white;
+  position: relative;
+}
+.logo a{
+  font-size: 1.5rem;
+  font-weight:700;
+  color:orangered;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+.logo a:hover{
+  color: #cc2900;
+}
+.nav-menu{
+  display: flex;
+  list-style: none;
+
+}
+h2{
+  color: orangered;
+}
+.nav-item
+{
+  margin-left: 2rem;
+}
+.nav-link{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+
+}  
+.nav-link1{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  position: relative;
+}
+nav a.nav-link1 {
+  font-weight: bold;
+  border-bottom: 2px solid #ff5100; /* Example accent color */
+}
+
+.nav-link:hover{
+  color: rgb(204, 58, 0);
+}
+.nav-link::after{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color:#f74009 ;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after{
+width: 100%;
+}
+.menu-toggle{
+  display: none;
+}
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  background-color:rgb(248, 117, 10);
+  transition: all 0.3s ease;
+}
+.hamburger{
+  display: none;
+}
+
+
+@media(max-width:760px){
+  .hamburger{
+    display: block;
+    z-index:101 ;
+    cursor: pointer;
+  }
+  .nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 0;
+    flex-direction: column;
+    background-color:white;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+    z-index: 100;
+    padding-top:80px;
+  }
+  .nav-item{
+    margin: 1.5rem 0;
+
+  }
+     /*   use css to transform hamburger into x    */
+     .menu-toggle:checked~.hamburger .bar:nth-child(1){
+       transform: translatey(8px) rotate(45deg);
+      
+     }
+     .menu-toggle:checked~.hamburger .bar:nth-child(2){
+      opacity: 0;
+     }
+     
+     .menu-toggle:checked~.hamburger .bar:nth-child(3) {
+       transform: translatey(-8px) rotate(-45deg);
+     }
+      .menu-toggle:checked~.nav-menu{
+        left: 0;
+      }
+
+      main{
+        padding: 2rem;
+      }
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+  }
+  header {
+  background: linear-gradient(90deg, #5c5c5b, #5d5e5e);
+  color: orangered;
+  text-align: center;
+  padding: 20px;
+  }
+  h1, h2 {
+  margin-bottom: 10px;
+  }
+  p {
+  line-height: 1.6;
+  }
+  /* About Content */
+  .about-content {
+  width: 80%;
+  margin: 20px auto;
+  background-color: rgb(146, 144, 144);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  /* Weather Elements */
+  .weather-elements {
+  background: #e3f2fd;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  }
+  .element {
+  background: white;
+  padding: 10px;
+  margin: 10px 0;
+  border-left: 5px solid #007BFF;
+  }
+  /* Seasons */
+  .seasons {
+  background: #ffecb3;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  }
+  .season {
+  background: white;
+  padding: 10px;
+  margin: 10px 0;
+  border-left: 5px solid #FF9800;
+  }
+  /* Weather Map */
+  .weather-map {
+  text-align: center;
+  margin-top: 20px;
+  }
+  .weather-map img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  /* Footer */
+  footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  }
+  h2{
+    color: orangered;
+  }

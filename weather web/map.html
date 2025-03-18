@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="map.css">
+</head>
+<body>               
+  <header>
+    <nav class="navbar">
+<div class="logo">
+  <a href="">weather-map</a>
+</div>
+<!-- hidden checkbox for toggle-->
+<input class="menu-toggle" type="checkbox" id="menu-toggle" placeholder=".">
+<label for="menu-toggle" class="hamburger">
+  <div class="bar"></div>
+  <div class="bar"></div>
+  <div class="bar"></div>
+</label>
+
+<!--nav links-->
+<ul class="nav-menu">
+  <li class="nav-item"><a href="WEATHER2.html"  class="nav-link">Main</a> </li>
+<li  class="nav-item"><a href="forecast.html"  class="nav-link"> Forecast</a> </li>
+<li  class="nav-item"><a href="dashboard.html" class="nav-link">Dashboard</a> </li>
+<li  class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+<li  class="nav-item"><a href="member1.html" class="nav-link">HOME</a></li>
+</ul>
+
+    </nav>
+  </header>
+
+  <div class="weather-map">
+    <h2>Live Weather Map</h2>
+    <iframe src="https://openweathermap.org/weathermap?basemap=map&cities=true&layer=temperature&zoom=5"
+    width="100%" height="450" style="border:0;" allowfullscreen loading="lazy">
+    </iframe>
+    <p>View real-time weather conditions including temperature, wind speed, and storm tracking.</p>
+    </div>
+</body>
+</html>
